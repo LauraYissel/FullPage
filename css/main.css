@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+}
+
+
+/*Header*/
+.header {
+    background: url(../img/eberhard-grossgasteiger-VDw-nsi5TpE-unsplash.jpg);
+    background-position: center;
+}
+.texto-naranja{
+    color: orange;
+    font-weight: 300;
+    
+}
+.texto-blanco{
+    color: white;
+    font-weight: 700;
+    
+}
+.header .contenedor-titulo{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .titulo {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+.bg-video {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: black;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+/*Animacion*/
+@keyframes bajar-subir {
+    0% {transform: translateY(20px);}
+    25% {transform: translateY(0px);}
+    100% {transform: translateY(20px);}
+}
+
+/**/  
