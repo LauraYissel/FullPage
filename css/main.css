@@ -112,7 +112,7 @@
     background-image: url('../img/todd-trapani-kLKg4fJlmqM-unsplash.jpg');
 }
 .productos article:nth-child(3) {
-    background-image: url('../img/willian-justen-de-vasconcellos-7jwHx5q7WeA-unsplash.jpg');
+    background-image: url('../img/alice-triquet-HeEJU3nrg_0-unsplash.jpg');
 }
 
 .productos .informacion-producto {
@@ -139,7 +139,7 @@
     font-size: 25px;
 }
 .productos .precio::before {
-    content: '€';
+    content: '';
     display: inline-block;
 }
 
