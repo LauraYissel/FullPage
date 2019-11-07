@@ -6,5 +6,12 @@ const seccionesPagina = new fullpage('#fullpage', {
     scrollingSpeed: 700,
     css3: true,
     easingcss3: 'ease-out',
-	loopBottom: false
+    loopBottom: false,
+    navigation: true,
+    menu: '#menu',
+    anchors: ['inicio', 'productos', 'contacto'],
+    navigationTooltips: ['inicio', 'productos', 'contacto'],
+    showActiveTooltip: false,
+    sectionsColor : ['#000', '#c2c2c2', '#000'],
+    verticalCentered: true,
 });
