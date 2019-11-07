@@ -99,4 +99,108 @@
     100% {transform: translateY(20px);}
 }
 
-/**/  
+/*productos*/  
+
+.productos article {
+    background-position: center;
+    background-size: cover;
+}
+.productos article:nth-child(1) {
+    background-image: url('../img/kevin-mueller-JoGSRrSrxc4-unsplash.jpg');
+}
+.productos article:nth-child(2) {
+    background-image: url('../img/todd-trapani-kLKg4fJlmqM-unsplash.jpg');
+}
+.productos article:nth-child(3) {
+    background-image: url('../img/willian-justen-de-vasconcellos-7jwHx5q7WeA-unsplash.jpg');
+}
+
+.productos .informacion-producto {
+    margin: 0 30px;
+    
+}
+.productos .informacion-producto::before {
+    content: '';
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    margin: -10px;
+}
+.productos .modelo {
+    font-size: 45px;
+}
+.productos .descripcion {
+    font-size: 22px;
+}
+.productos .precio  {
+    font-size: 25px;
+}
+.productos .precio::before {
+    content: '€';
+    display: inline-block;
+}
+
+/*Fullpage Slide*/
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #000 transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #000;
+}
+
+/*Footer*/
+
+.footer .texto-naranja {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.footer h2 {
+    /* opacity: 0; */
+    transition: .3s ease all;
+    text-align: center;
+}
+.footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+    
+}
+.footer .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #30313a;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+
+}
+.footer .facebook i {color: #3b5998;}
+.footer .twitter i {color: #1da1f2;}
+.footer .instagram i {color: #c13584;}
+
+.footer .facebook:hover {background:  #3b5998;}
+.footer .twitter:hover {background: #1da1f2;}
+.footer .instagram:hover {background: #c13584;}
+
+.footer .facebook:hover i {color:  white;}
+.footer .twitter:hover i {color: white;}
+.footer .instagram:hover i {color: white;}
